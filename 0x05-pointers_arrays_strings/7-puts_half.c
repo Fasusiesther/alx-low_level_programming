@@ -3,9 +3,10 @@
 /**
  * puts_half - print second half of a string
  * @str: char array string type
+*Return: Always 0
  * Description: If odd number of chars, print (length - 1) / 2
  */
-
+int main(void)
 void puts_half(char *str)
 {
 	int i;
@@ -15,6 +16,7 @@ void puts_half(char *str)
 
 	i++;
 	for (i /= 2; str[i] != '\0'; i++)
+
 	{
 		_putchar(str[i]);
 	}
