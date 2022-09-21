@@ -1,12 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-*reset_to_98 - resets the value of given integer to 98
-*@n: parameter
-*Return : nothing
-*/
-
-void reset_to_98(int *n)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	*n = 98;
+    char s1[98] = "Hello ";
+    char s2[] = "World!\n";
+    char *ptr;
+
+    printf("%s\n", s1);
+    printf("%s", s2);
+    ptr = _strcat(s1, s2);
+    printf("%s", s1);
+    printf("%s", s2);
+    printf("%s", ptr);
+    return (0);
 }
