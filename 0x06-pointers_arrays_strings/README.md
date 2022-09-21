@@ -1,1 +1,1 @@
-My Readme for 0x06-pointerd arrays and strings 
+Readme file for 0x06 -c arrays
