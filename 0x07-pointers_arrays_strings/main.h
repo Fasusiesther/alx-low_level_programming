@@ -1,7 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char);
+/**
+ * File: main.h
+ * Auth: Fasusi Esther
+ * Desc: Header file containing prototypes for all functions
+ *       used in the 0x07-pointers_arrays_strings directory.
+ */
+
+#include <stddef.h>
+
+int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
@@ -12,4 +21,4 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
 
-#endif /*MAIN_H*/
+#endif
