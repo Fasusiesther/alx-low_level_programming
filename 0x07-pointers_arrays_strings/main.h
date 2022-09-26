@@ -3,9 +3,9 @@
 
 /**
  * File: main.h
- * Auth: Fasusi Esther
  * Desc: Header file containing prototypes for all functions
- *       used in the 0x07-pointers_arrays_strings directory.
+ * void prototypes ( )
+* int prototypes ( )
  */
 
 int _putchar(char c);
