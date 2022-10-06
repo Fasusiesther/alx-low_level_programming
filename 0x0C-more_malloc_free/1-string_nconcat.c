@@ -10,36 +10,28 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *Esther_tope;
-	unsigned int i = 0, lens1 = 0, lens2 = 0;
-
-	if (s1 == NULL)
-		s1 = "";
-
-	while (s1[lens1])
-		lens1++;
-
-	if (s2 == NULL)
-		s2 = "";
-
-	while (s2[lens2])
-		lens2++;
-
-	if (n >= lens2)
-		n = lens2;
-
-	Esther_tope = malloc(lens1 + n + 1);
-	if (Esther_tope == NULL)
-		return (NULL);
-
-	for (; i < (lens1 + n); i++)
-	{
-		if (i < lens1)
-			Esther_tope[i] = *s1, s1++;
-		else
-		
-Esther_tope[i] = *s2, s2++;
-	}
-	Esther_tope[i] = '\0';
-	return (Esther_tope);
+	unsigned int I, j, k ;
+char *s;
+if (s1 ==NULL)
+  i=0;
+else
+{for (i=0; s1[i]; i++)
+                ;
+}
+if (s2 ==NULL)
+  i=0;
+else
+{
+for (j=0 ; s2[j]; j++)
+       ;
+}
+if (j > n)
+j = n ;
+s= malloc(sizeof(char)* (i+j +1);
+if (s==NULL)
+return(NULL);
+for (k=0; k<i ; k++)
+s[k + i] =s2[k];
+s[i + j] ='\0';
+return(s);
 }
